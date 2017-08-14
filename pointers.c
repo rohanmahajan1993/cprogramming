@@ -82,6 +82,18 @@ void arraysAndPointers() {
  a[2] = 5;
  assert(b[2] == 6); 
 }
+
+int function1(float f) {
+  return 3;
+}
+void functionalPointers() {
+ int (*function1)(float); // exactly like function synthax but have star in front of function name
+ foo = &function1;
+ /* call my_int_func (note that you do not need to write (*foo)(2) ) */
+ foo(2.0);
+ /* but if you want to, you may */
+ (*foo)(2.0); 
+}
 // There are no referencers in c btw
 
 int main() {
@@ -90,4 +102,5 @@ int main() {
    passingPointers();
    passingDoublePointers();
    arraysAndPointers();
+   functionalPointers();
 }
