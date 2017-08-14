@@ -1,3 +1,0 @@
-1. Inlines versus macro. Macro actually replaces the text in the prepocessing phase, but the inline is just a basically a hint to the compiler that you can copy the instructions.
-2. There is no real difference between the .h and .c files. This is more a stylistic thing. When we use include, we copy the contents of what we are including. This is a preprocessor directive. This is why we only want to include function declarations and not function implementations because we don't want the functions to. Also, when you do include the "" first search the local directory and then system directories, while the <> just searches the system directories.
-3.

@@ -1,0 +1,4 @@
+1. Heap is used for anything where we call malloc.
+2. Stack is used for stack variables.
+3. Data and BSS store all of the static and global variables. 
+4. Text is used for code.  
