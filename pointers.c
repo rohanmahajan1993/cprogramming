@@ -73,10 +73,21 @@ void passingDoublePointers() {
  assert(*a_pointer == 1);
 }
 
+// key difference between arrays and pointers is that pointer has its own memory space which is distinct from values it points too
+// also compiler knows how long array is
+// can use array notation for pointers but they are distinct
+void arraysAndPointers() {
+ int a[10];
+ int * b = a;
+ a[2] = 5;
+ assert(b[2] == 6); 
+}
+// There are no referencers in c btw
 
 int main() {
    voidPointers();
    castingPointers();
    passingPointers();
    passingDoublePointers();
+   arraysAndPointers();
 }
