@@ -37,10 +37,21 @@ void structPointers() {
   assert(a.a == 3);
   assert(a.b == 4);
 }
+// in union, only want to define one of the values compared to struct where define all member of struct
+union Data {
+   int i;
+   float f;
+   char str[20];
+};
 
-
+void unionFunction() {
+  data d;
+  d.i = 3;
+  assert(d.i == 3);
+}
 int main() {
  basic_structs();
  typedefStruct();
- structPointers();  
+ structPointers(); 
+ unionFunction(); 
 }
