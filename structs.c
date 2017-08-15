@@ -38,6 +38,7 @@ void structPointers() {
   assert(a.b == 4);
 }
 
+
 int main() {
  basic_structs();
  typedefStruct();
