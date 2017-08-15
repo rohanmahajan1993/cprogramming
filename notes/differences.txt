@@ -1,0 +1,1 @@
+1. There are no strings in c but just char arrays in c++.
