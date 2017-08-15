@@ -5,4 +5,7 @@ class Rectangle
  public:
    int height;
    int width;
+   int  area (int, float);
+   Rectangle ();
+   Rectangle(int, int);
 };
