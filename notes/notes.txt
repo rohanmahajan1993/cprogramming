@@ -1,3 +1,4 @@
 1. There is no real difference between the .h and .c files. This is more a stylistic thing. When we use include, we copy the contents of what we are including. This is a preprocessor directive. This is why we only want to include function declarations and not function implementations because we don't want the functions to. Also, when you do include the "" first search the local directory and then system directories, while the <> just searches the system directories.
 2. Declaration versus Definition. Something can be declared multiple times, but only defined once. Declaration just lets you know a file is available, but definition actually defines it. i
-3. Translational units are just files that have been preprocessed and modified. 
+3. Translational units are just files that have been preprocessed and modified. Basically, every file is compiled seperately. This is why we need to include headers because I at least need a reference to the declaration of everything I compile. I could also just use include.
+
