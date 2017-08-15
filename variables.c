@@ -17,6 +17,8 @@ void heap_allocator() {
   // calloc takes two parameter versus one for malloc due to historical reasons
   int * calloc_ptr = (int *)calloc(1, sizeof(int));
   assert(*calloc_ptr == 0);
+  free (malloc_ptr);
+  free(calloc_ptr);
 }
 
 int main() {
