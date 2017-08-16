@@ -16,8 +16,17 @@ Rectangle::Rectangle (int x, int y) {
   height = y;
 }
 
+int Rectangle::size() {
+  return 3;
+}
+
+template <class T>
+TemplateClass<T>::TemplateClass(T t) {
+ a = t;
+}
 
 Rectangle c1 (3,4);
+int Rectangle::i = 0; //have to declare static variables outside the function
 int main() 
 {
   Rectangle a, b;
@@ -36,4 +45,10 @@ int main()
   // new uses the heap; returns a pointer 
   Rectangle *r2 = new Rectangle(3, 5);
   delete(r2);
+  // can still use basic instance logic for static variables and methods
+  assert(c1.i == 0);
+  assert(c1.size() == 3);
+  //but can also use class logic
+  assert(Rectangle::i == 0);    
+  assert(Rectangle::size() == 3);    
 }
