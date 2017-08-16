@@ -13,6 +13,7 @@ class Rectangle
 };
 
 // Templates are basically generics
+// Have to use this template keyword everywhre
 template <class T>
 class TemplateClass {
   public:
