@@ -1,3 +1,6 @@
+#ifndef HEADER_GUARD_H
+#define GUARD_H
+
 typedef int a;
 // be caeful defines don't need any semicolon for comments
 #define b int
@@ -12,3 +15,4 @@ int main () {
   int c;
   c = 3;
 }
+#endif GUARD_H

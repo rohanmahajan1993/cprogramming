@@ -1,5 +1,7 @@
 #include <assert.h>
 // Generally want to put structs in header file
+// depdends on whether you need the defintion
+// https://en.wikipedia.org/wiki/One_Definition_Rule
 struct Books  {
    int a;
    int b;
