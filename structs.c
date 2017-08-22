@@ -19,10 +19,21 @@ void basic_structs() {
 
 // could have used value name and would have worked just as well as values t 
 // use typedef so don't have to use word struct everywhere
+// name after here is not instances but just new name
 typedef struct values {
   int a;
   int b;
 } values_t;
+
+typedef struct a {
+  int a;
+  int b;
+} a;
+
+typedef struct  {
+  int a;
+  int b;
+} b;
 
 void typedefStruct() {
   values_t a = {1, 2};
